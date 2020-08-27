@@ -1,59 +1,80 @@
-<!DOCTYPE html>
+tml>
 <html>
 <head>
-	<title>Nav Bar Center Align</title>
-
+	<title>Tabelas</title>
 	<style type="text/css">
-
-		body{
+		
+		*{
+			font-family: helvetica;
 			margin: 0;
 			padding: 0;
-			background-color: #ccc;
 		}
 
-		.nav ul{
-			list-style-type: none;
-			background-color: pink;
-			text-align: center;
-			padding: 0;
+		#box{
+			background: #f6f4e6;
+			border: 1px solid red;
+			width: 80%;
 			margin: 0 auto;
 		}
-
-		.nav li{
-			display: inline-block;
-		}
-
-		.nav a{
-			text-decoration: none;
+		#head{
 			color: #fff;
-			width: 110px;
-			display: block;
-			padding: 15px;
-			font-size: 20px;
-			font-family: Helvetica;
+			background: #fabea7;
+			border:1px solid blue;
+			margin: 10px 20px;
+			padding: 35px;
+			text-align: center;
 		}
 
-		.nav a:hover{
-			color: black;
+		#nav{
+			background: #9cada4;
+			border: 1px solid green;
+			margin: 10px 20px;
+		}
+
+		#nav table {
+			border: 1px solid black;
+			margin: 0 auto;
+			padding: 10px;
+			text-align: center;
+		}
+
+		#nav a{
+			color: #fff;
+			font-size: 1.3em;
+			padding: 20px;
+			text-decoration: none;
+		}
+
+		#nav a:hover{
+			color: #767c77;
 			transition: 0.8s;
 		}
 
-
-
 	</style>
-
 </head>
 <body>
 
-	<div class="nav">
-		<ul>
-			<li><a href="">Home</a></li>
-			<li><a href="">Esportes</a></li>
-			<li><a href="">Games</a></li>
-			<li><a href="">Tecnologia</a></li>
-			<li><a href="">Ciência</a></li>
-		</ul>
-	</div>	
+	<div id="box">
+
+		<div id="head">
+			<h1>Criando Tabelas HTML</h1>
+		</div>
+
+		<div id="nav">
+			
+			<table>
+				<tr>
+					<td><a href="">Home</a></td>
+					<td><a href="">Tecnologia</a></td>
+					<td><a href="">Esportes</a></td>
+					<td><a href="">Música</a></td>
+					<td><a href="">Contato</a></td>
+				</tr>
+			</table>
+
+		</div>
+
+	</div>
 
 </body>
 </html>
